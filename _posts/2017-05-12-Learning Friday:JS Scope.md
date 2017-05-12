@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning Friday: JS Scope
+title: Learning Friday&#58; JS Scope
 ---
 # First header
 asdfadfads
