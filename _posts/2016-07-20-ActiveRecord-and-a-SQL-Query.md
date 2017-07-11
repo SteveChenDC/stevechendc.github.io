@@ -19,3 +19,5 @@ This outputs an ActiveRecord hash containing a user found by the query in the da
 {% endhighlight %}
 
 Here we use the development database from SteamFriend.me to fetch a user with an id of 1.
+
+You can find out more on the [ActiveRecord ORM here] (http://guides.rubyonrails.org/active_record_basics.html)
