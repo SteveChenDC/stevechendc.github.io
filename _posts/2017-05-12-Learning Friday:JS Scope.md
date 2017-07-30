@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning Friday&#58; JS Scope - Global, Function, and Block Part 1 of 2
+title: Learning Friday&#58; JS Scope - Global, Function, and Block 
 ---
 
 Hey there! Here are some notes I took after reading Kyle Simpson's YDKJS and watching his "Advanced Front-end Masters" on Scope. Let me know if theres anything I can improve with this article via the links below. There's always room to improve!
