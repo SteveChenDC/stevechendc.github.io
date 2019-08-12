@@ -4,7 +4,6 @@ title:
 permalink: /about/
 ---
 
-## Mission Statement
 Community 
 
 ### Work 
