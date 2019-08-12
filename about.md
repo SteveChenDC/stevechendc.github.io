@@ -3,6 +3,7 @@ layout: page
 title:
 permalink: /about/
 ---
+
 # Mission Statement
 Changing the world one person at a time
 
@@ -12,10 +13,6 @@ Steve Chen is a Software Engineer in Test at Framebridge. He currently works mai
 ## Community Involvement(Meetups) - Does this 1hr a week
 He's also organized meetups such as [DC Code & Coffee](https://www.meetup.com/dc-code-coffee/), [DC Design & Coffee](https://www.meetup.com/DC-Design-Coffee/), [ReactDC](https://www.meetup.com/React-DC/), [Asians in Tech](https://www.meetup.com/Asians-in-Tech/). In his spare time, you can see him zipping around on his electric skateboard, fly fishing in MD, or at your local DC meetup!
 
-
-
-
-<!--<div style="text-align:center"><a href="https://docs.google.com/uc?authuser=0&id=0ByoQKwbdZdr8RjluVzVvRHY3enc&export=download">Resume</a></div>-->
 
 ### Send an Email
 
