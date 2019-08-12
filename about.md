@@ -4,7 +4,6 @@ title:
 permalink: /about/
 ---
 
-### Income
 Steve Chen is a Software Engineer in Test at Framebridge. He currently works mainly with Ruby to build tests, processes, and documentation across distributed teams/systems for a hyper-growth custom framing startup. He also moonlights as a Product Manager on Booster. His resume includes Frontend work with React at GrubHub, on-demand delivery jobs, freelancing, and series A-C startups.
 
 ### Meetups
