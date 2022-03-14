@@ -4,7 +4,7 @@ title:
 permalink: /about/
 ---
 
-Steve Chen is a Software Engineer at Framebridge. He currently works mainly with Ruby to build tests, processes, and documentation across distributed teams/systems for a hyper-growth custom framing startup. He also moonlights as a Product Manager on Booster. His resume includes Frontend work with React at GrubHub, on-demand delivery jobs, freelancing, and series A-C startups.
+Steve Chen is a Software Engineer at Framebridge. He currently works mainly with Ruby to build tests, processes, and documentation across distributed teams/systems for a hyper-growth custom framing startup. He also moonlights as a founder of NY Code & Coffee and is always looking for cool people to talk to! The top right resume includes Frontend work with Javascript + React at GrubHub, building a playground locator in Ruby at a non-profit called KaBOOM!, and additional work at startups. For updated details, check out his LinkedIn below!
 
 In his spare time, you can see him zipping around on his electric skateboard, fly fishing in MD, building NY Code & Coffee on Sunday, or at his local DC meetup or conference!
 
@@ -18,3 +18,7 @@ Gave a talk once on [Getting a job as a college dropout](https://www.meetup.com/
 
 [stevechenweb@gmail.com](mailto:stevechenweb@gmail.com)
 
+
+
+
+Note: Steve updates this using .md once a year and likely has forgot to. Last update 3/14/22!
