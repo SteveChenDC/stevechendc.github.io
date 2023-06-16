@@ -1,0 +1,53 @@
+I"
+<p>Hey there! Here are some notes I took after reading Kyle Simpson’s YDKJS and watching his “Advanced Front-end Masters” on Scope. Let me know if theres anything I can improve with this article via the links below. There’s always room to improve!</p>
+
+<h1 id="what-is-scope">What is Scope?</h1>
+<p>According to W3Schools, scope is the set of variables you have access to.</p>
+
+<p>There are 3 types of Scopes in JS:</p>
+<ul>
+  <li>Global Scope</li>
+  <li>Function Scope</li>
+  <li>Block Scope</li>
+</ul>
+
+<h2 id="global-scope">Global Scope</h2>
+<p>This is whatever’s not in function or block. These variables are accessible from wherever.</p>
+
+<h2 id="function-scope">Function Scope</h2>
+<p>Variables declared within a function are considered to be in the Function Scope. This is the most common type of scope you’ll run into. Whenever there is a variable declared within a function it is also accessible by the nested function. For example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function holdsTheHi(){
+  var greeting = "hello";
+  helloBob();
+  function helloBob(){
+    console.log(greeting, "Bob"); // greeting is within holdsTheHi's function scope
+  }
+}
+holdsTheHi(); // "hi Bob"
+console.log(greeting);            // greeting is not defined
+</code></pre></div></div>
+
+<h2 id="block-scope">Block Scope</h2>
+<p>In old school vanilla JS these are not so common. Block Scopes are used within things like for-loops, if-loops, and try/catch’s. For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for (var i=0; i&lt;10; i++) { // i declared within for block
+	console.log( i );
+}
+</code></pre></div></div>
+<h3 id="let">let</h3>
+<p>However as of ES6, you’re able to use <strong>let</strong> instead of <strong>var</strong> to declare variables. In short, this keeps the variable accessible within the two parens {..} of a block scope. That’s it. For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var foo = true;
+
+if (foo) {
+	{ // &lt;-- explicit block
+		let bar = 2;
+		bar = 3;
+		console.log( bar );
+	}
+  console.log(bar); // ReferenceError
+}
+
+console.log( bar ); // ReferenceError
+</code></pre></div></div>
+<p>We explicitly define a block here that only logs the <strong>bar</strong> within the block scope. If we use a <strong>var</strong> instead of <strong>let</strong> to declare <strong>bar</strong>, all 3 of these would be outputted.</p>
+:ET

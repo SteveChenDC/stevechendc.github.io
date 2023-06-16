@@ -1,0 +1,25 @@
+I"�<p>Today I want to share the wonders of Jekyll, the gem this website is built on.</p>
+
+<p>Jekyll is a Ruby gem that generates a blog-aware static site. Very simple and easy to throw up with github-pages. Very slick and shares navigation and layout across multiple pages.</p>
+<h2>Installing Jekyll</h2>
+<p>Install it by doing</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="no">Jekyll</span></code></pre></figure>
+
+<p>This installs the gem and allows you to run</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> <span class="n">your_blog_name</span></code></pre></figure>
+
+<p>to generate the project with Jekyll files already configured and ready to go.</p>
+<h2> Running Jekyll locally</h2>
+<p>In your terminal run</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<p>to start the local jekyll server. <strong>Boom, you’re riding Jekyll</strong>. You can view it under <code class="language-plaintext highlighter-rouge">localhost:4000</code> in your browser.</p>
+<h2> Making posts and configuration</h2>
+<p>To make posts create a new file in the _posts folder and use this funky format <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-Hella-Cool-title.md</code> for each post. Your <code class="language-plaintext highlighter-rouge">_config.yml</code> file will contain all the text you need to change so it doesn’t look like you just generated a brand new jekyll blog.</p>
+<h2>Hosting to Github Pages</h2>
+<p>Fortunately this is the most tedious part of getting setup. Check out the <a href="https://jekyllrb.com/docs/github-pages/">documentation</a>.</p>
+
+<p>For a much more comprehensive experience checkout the <a href="https://jekyllrb.com/docs/home/">official docs</a>.</p>
+:ET

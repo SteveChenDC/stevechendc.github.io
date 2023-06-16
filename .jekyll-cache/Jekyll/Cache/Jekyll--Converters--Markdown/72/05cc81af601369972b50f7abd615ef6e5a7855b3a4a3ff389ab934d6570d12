@@ -1,0 +1,24 @@
+I"A<p>Error handling is a common practice among almost all programming languages. They handle errors. Typically - anticipation, detection, and resolution of programming, application, and communications errors. It produces something the user or developer wants more than an ungraceful error.</p>
+
+<p><strong>try/catch Syntax</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>try {
+
+  // code...
+
+} catch (err) {
+
+  // this block gets executed when there is an error
+
+}
+</code></pre></div></div>
+
+<p><strong>try</strong> is a statement where the code inside the block is executed. If it doesn’t work or errors, it moves over to catch, whatever is in catch is executed only once the code in the try scope produces an error.</p>
+
+<p><strong>throw</strong> creates a custom error. Typically when code fails unexpectedly an error is automatically generated. These help in the debugging process. For example, we have the following block of code:</p>
+
+<p><strong>Example:</strong>
+<img src="https://i.imgur.com/dSm4jl9.png" alt="js ex" />
+Here we have code that errors in the try method.  The error is caught by the throw and produces a custom error messages like the one above!</p>
+
+<p><em>Common dev lingo “This code is not working correctly, it just threw/throw an error”.</em></p>
+:ET
