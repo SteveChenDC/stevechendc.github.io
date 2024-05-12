@@ -1,76 +1,84 @@
 ---
 layout: post
-title: Building an Application Support System
+title: Building an effective App Support System
 ---
 
-As software applications grow in complexity and usage, having a robust system for managing bugs and issues becomes crucial. This article outlines a framework for establishing an application support system tailored for startups and small-to-medium technology companies seeking to streamline their bug resolution processes.
+As software applications grow, managing bugs effectively becomes paramount. An application support system provides a structured framework for triaging, specifying, and prioritizing incoming bug reports, ensuring prompt and efficient resolution to issues.
 
-Why You Need an Application Support System
-------------------------------------------
+This article will go over the necessity for an Application Support System, the core processes of one, common pitfalls, priority levels, and the clear benefits of one.
 
-Unresolved bugs can quickly become a bottleneck, hindering developer productivity and compromising platform stability. Common root causes include technical debt, user errors, and oversights during the QA or code review phases. Often, the lack of a structured system to report and prioritize bugs leads to prolonged resolution times.
+# The Need for an Application Support
 
-Rapidly growing startups and companies operating in domains prone to frequent errors (e.g., web scraping) or critical revenue-impacting bugs (e.g., food delivery) can particularly benefit from an application support system. Typical challenges include:
+---------------------------------------
 
--   Slow bug turnaround times
--   Duplicate bug tickets
--   Lack of ticket ownership
--   Engineering productivity loss due to context switching, interruptions, and status updates
--   Decreased satisfaction of non-technical teams with engineering
+Unresolved bugs severely hinder developer output and compromise application stability. Common root causes include technical debt, user errors, and oversights during QA(Quality Assurance) or code reviews.
 
-Common Pitfalls to Avoid
-------------------------
+**The Need**
 
-Successful implementation of an application support system requires addressing common mistakes, such as:
+Without a concrete system of processes to report and prioritize bugs, it will lead to LONG resolution times, resulting in death by 100 papercuts, a term used to describe bugs adding up and ruining the user experience.
 
-1.  **Multiple Ticket Creators**: Having too many people creating bug tickets can lead to inconsistencies and duplication.
-2.  **Lack of Ownership**: Assigning application support responsibilities on a rotational basis to software engineers can be ineffective, as their primary role is writing new code within their domains of expertise.
-3.  **Rotating Software Engineers**: Rather than rotating software engineers through application support duties, designate a dedicated role, such as an application support engineer or product manager, to oversee the system.
+**The Business Impact**
 
-The Four Crucial Processes
---------------------------
+Rapidly growing startups and companies operating in domains prone to frequent errors (e.g., web scraping) or critical revenue-impacting bugs (e.g., food delivery and custom framing) particularly benefit from an application support system.
 
-An effective application support system comprises four core processes:
+**Typical impact**
 
-1.  **Bug Report**: A user, employee, or monitoring tool reports a bug, initiating the process.
-2.  **Triage**: The application support engineer determines the root cause, steps to reproduce the bug, and potential workarounds.
-3.  **Ticket Specification**: A detailed ticket is created, including a description, acceptance criteria, and support details.
-4.  **Prioritization**: The bug is prioritized based on its business impact, frequency, and other factors, determining its place in the current or future sprints.
+-   Slow bug turnaround.
 
-### Bug Report
+-   Duplicate tickets.
 
-The bug report process kickstarts the application support system. A user, employee, or error monitoring tool submits a report, which the application support engineer or product manager follows up on with clarifying questions to aid the subsequent processes.
+-   Lack of ownership.
 
-### Triage
+-   Productivity loss from the user to the engineer.
 
-During triage, the application support engineer aims to understand:
+Having experience building support systems at startups such as Grubhub, Arcadia, and Framebridge. **Support systems ensure app stability to widen the moat for an exit or IPO**.
 
--   Business impact (customers affected)
--   Frequency and number of reports
--   Steps to reproduce
--   Known workarounds
+## Core Processes
+---------------------------
 
-### Ticket Specification
+![image of a typical app support request flow diagram from slack](/images/flow-app-support-system.jpg)
+*Building Arcadia's Application Support presented at a [monthly All-hands in 2018](https://www.linkedin.com/feed/update/urn:li:activity:6413109425011195904/){:target="_blank"}*
 
-With the triage information, a detailed ticket can be created in the ticketing management system (e.g., JIRA, GitHub Issues). The ticket should include:
+**1. Bug Report**: A user, employee, or monitoring tool submits a bug report, initiating the process. The application support engineer follows up for clarification.
 
--   **Description**: A concise summary of the issue.
--   **Acceptance Criteria**: The criteria engineers use to determine when the ticket is resolved.
--   **Original Report**: A link to the initial bug report for reference.
--   **Additional Details**: Supporting information, such as images, user biases, or suggestions from the application support engineer.
+**2. Triage**: Determine the root cause, reproduction steps, and potential workarounds.
 
-### Prioritization
+**3. Ticket Specification**: Create a detailed ticket with a description, acceptance criteria, original report link, and additional support details.
 
-Prioritization is the most crucial phase, as it determines when the bug should be fixed. Factors like the number of affected users, potential revenue loss, and the impact on other tickets influence the priority level assigned. The application support engineer or product manager should be well-versed in the company's products to make informed decisions.
+**4. Prioritization**: Assess business impact, frequency, and related issues to assign a priority level for the current or future sprints.
 
-Typical priority levels include:
+## Common Pitfalls
 
--   **P0 (Critical)**: Extremely rare, these bugs require immediate resolution and are prioritized in the current sprint.
--   **P1 (Major)**: Usually included in the current sprint, depending on severity.
--   **P2 (Standard)**: The majority of tickets fall into this category, with a chance of being addressed in the current sprint based on necessity.
--   **P3 (Minor)**: Lower-priority tickets that may not be addressed immediately, if at all.
+----------------------------
 
-Conclusion
-----------
+- **Duplicate Tickets**: Too many people creating bug tickets can lead to inconsistencies and duplication. Aim for DRY ([Don't Repeat Yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself){:target="_blank"})
 
-Implementing an effective application support system is crucial for maintaining high-quality software and ensuring efficient bug resolution. By following the outlined framework and avoiding common pitfalls, startups and technology companies can establish a streamlined process for managing bugs, promoting developer productivity and customer satisfaction.
+- **Lack of Ownership**: The user affected by these bugs should have a clear point of contact, whether an individual or a group.
+
+- **Rotating Software Engineers**: Instead, designate a dedicated role, such as an application support engineer or product manager, to oversee the system.
+
+
+## Priority Levels
+
+Some companies, like Amazon and Google, use SEV-0 to SEV-4. Naming matters little here, though having common ground is essential to ensure timely resolution.
+
+-  **P0 (Critical)**: Immediate resolution prioritized in the current sprint.
+
+-  **P1 (Major)**: Typically included in the current sprint, based on severity.
+
+-  **P2 (Standard)**: Most tickets, with a chance for the current sprint if necessary.
+
+-  **P3 (Minor)**: Low priority, may be addressed after some time.
+
+## The Benefits
+
+----------------
+
+Implementing an effective application support system streamlines bug management, improves productivity, enhances stability, and creates clarity in a typically cross-functional environment.
+
+By following this framework of processes, even the smallest companies can efficiently manage bugs, promoting a more stable and productive  environment. 
+
+## Conclusion
+Overall, it keeps the application effective and stable. Without these core processes set up and pitfalls in view, Arcadia would not be at a unicorn billion-dollar valuation, and Framebridge would not be a market-leading brand in the custom framing industry.
+
+My next post will go over _Building one with $0 using existing features in Slack, Github, and JIRA_.  Thanks for reading!
